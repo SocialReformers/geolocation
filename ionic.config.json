@@ -1,0 +1,8 @@
+{
+  "name": "nearby-NGO",
+  "app_id": "a0660ca0",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}
