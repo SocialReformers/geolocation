@@ -22,7 +22,8 @@ import { HomePage } from '../pages/home/home';
     BrowserModule,
     FormsModule,
     ComponentsModule,
-    IonicModule.forRoot(MyApp)
+    IonicModule.forRoot(MyApp,{  preloadModules: true
+    })
   ],
   bootstrap: [IonicApp],
   entryComponents: [
