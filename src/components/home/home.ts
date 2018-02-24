@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { ModalController} from 'ionic-angular';
 import {AutocompletePageComponent} from '../autocomplete-page/autocomplete-page';
+import { NavController } from 'ionic-angular/navigation/nav-controller';
 
 /**
  * Generated class for the HomeComponent component.
@@ -13,10 +14,11 @@ import {AutocompletePageComponent} from '../autocomplete-page/autocomplete-page'
   templateUrl: 'home.html'
 })
 export class HomeComponent {
-
+  navctrl:NavController;
   address;
 
-  constructor(               private ModalCtrl:ModalController) {
+  constructor( nav:NavController, private ModalCtrl:ModalController) {
+    this.navctrl=nav;
                 this.address={
                   place:''
                 };
