@@ -1,14 +1,29 @@
-<ion-header>
-  <ion-navbar>
-    <ion-title>
-      Map
-    </ion-title>
-    <ion-buttons end>
-      <button ion-button (click)="addMarker()"><ion-icon name="add"></ion-icon>Add Marker</button>
-    </ion-buttons> 
-  </ion-navbar>
-</ion-header>
+
  
 <ion-content>
-  <div #map id="map"></div> 
+ 
+
+    <div class="row">
+    <div class="col-xs-12 col-md-6">
+      <div class="panel panel-primary">
+        <div class="panel-heading">
+          <h3 class="panel-title">Example 1</h3>
+        </div>
+        <div class="panel-body">
+          <div class="well">
+            <p>Setting used:</p>
+            <code>NONE (All default settings are used)</code>
+          </div>
+          <div>
+            <auto-complete (componentCallback)="autoCompleteCallback1($event)"></auto-complete>
+          </div>
+          <div class="well" style="float: left;width: 100%;margin-top: 20px;">
+            <p>Sample Output:</p>
+            <samp style="word-wrap: break-word;">{{componentData1}}</samp>
+          </div>
+        </div>
+      </div>
+    </div>
+     
+  </div>
 </ion-content>
