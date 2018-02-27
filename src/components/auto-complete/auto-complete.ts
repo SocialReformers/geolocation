@@ -39,6 +39,8 @@ export class AutoCompleteComponent  implements OnInit, OnChanges {
     geoTypes: [],
     geoLocation: [],
     geoRadius: 0,
+    type:'establishment',
+    keyword:'ngo',
     serverResponseListHierarchy: [],
     serverResponseatLangHierarchy: [],
     serverResponseDetailHierarchy: [],
@@ -77,6 +79,7 @@ export class AutoCompleteComponent  implements OnInit, OnChanges {
   //function called when click event happens in input box. (Binded with view)
   searchinputClickCallback(event: any): any {
     event.target.select();
+    let inputVal: any = this.locationInput;
     this.searchinputCallback(event);
   }
 

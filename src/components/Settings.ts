@@ -6,6 +6,11 @@ export interface Settings {
     geoTypes?: any;
     geoLocation?: any;
     geoRadius?: number;
+    keyword?:String;
+    name?:String;
+    type?:String;
+    libraries?:String;
+    placeId?:String;
     serverResponseListHierarchy?: any;
     serverResponseatLangHierarchy?: any;
     serverResponseDetailHierarchy?: any;

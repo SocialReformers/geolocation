@@ -14,12 +14,29 @@
             <p>Setting used:</p>
             <code>NONE (All default settings are used)</code>
           </div>
-          <div>
-            <auto-complete (componentCallback)="autoCompleteCallback1($event)"></auto-complete>
-          </div>
+          <div >
+              <auto-complete #lat2 (componentCallback)="autoCompleteCallback1($event)"></auto-complete>
+            </div>
+            <div >
+                <ion-list>
+                    <ion-item>
+                      <ion-label>Select Hive</ion-label>
+                      <ion-select #newSelect [(ngModel)]="carbrand" (change)="onChange(carbrand)">
+                        <ion-option value="bank" checked="true">Bank</ion-option>
+                        <ion-option value="police" >Police</ion-option>                      
+                      </ion-select>
+                    </ion-item>
+                  </ion-list>
+         
+              
+              </div>
+              <div >
+                <auto-complete [userSettings]="userSettings3" (componentCallback)="autoCompleteCallback2($event)"></auto-complete>
+              </div>
+            
           <div class="well" style="float: left;width: 100%;margin-top: 20px;">
             <p>Sample Output:</p>
-            <samp style="word-wrap: break-word;">{{componentData1}}</samp>
+            <samp style="word-wrap: break-word;">{{componentData2}}</samp>
           </div>
         </div>
       </div>
